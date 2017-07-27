@@ -41,7 +41,7 @@ mt20{
 	position: inherit;
 }
 /* popup*/
-#screen, #notice, #modal {
+#screen, #notice, #modal, #login-popup {
     position: fixed;
 }
 #screen{
@@ -51,7 +51,6 @@ mt20{
 	z-index: 50;
 }
 #notice {
-    padding: 30px;
     top: 10%;
     left: 33.333%;
     width: 33.333%;
@@ -59,7 +58,8 @@ mt20{
     border-radius: 15px;
     z-index: 100;
 }
-.notice-wrap {
+.notice-wrap, .login-wrap {
+    padding: 30px;
     width: 100%;
     text-align: center;
 }
@@ -72,23 +72,93 @@ mt20{
     margin-top: 20px;
     padding: 10px;
     width: 200px;
-    background-color: #0a85d5;
+    background-color: #666;
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
 }
 .notice-btn:hover {
-    background-color: #023454;
-    color: #b8dcf4;
+    background-color: #111;
+    color: #ccc;
+    transition: all 0.5s;
 }
-
-header{
-	position: fixed;
-	left: 0; top: 0;
-	width: 100%;
-	height: 100px;
-	background-color: #fff;
-	z-index: 5;
+#login-popup {
+    top: 20%;
+    left: 33.333%;
+    width: 33.333%;
+    display: none;
+    background-color: #fff;
+    z-index: 100;
+}
+.login-logo {
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+.login-logo img {
+    width: 200px;
+    height: 100px;
+}
+.login-form{
+    float: left;
+    padding: 50px 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+.form-control{
+    margin: 10px 0;
+    padding: 15px;
+    width: 70%;
+    height: 50px;
+    font-size: 15px;
+}
+.form-control:focus{
+    border: 1px solid #ccc;
+    background: #000;
+    color: #fff;
+}
+.btn-primary{
+    margin: 50px 0;
+    width:150px;
+    height:40px;
+    background: #aaa;
+    color: #fff;
+    border-radius: 10px;
+    transition:all 0.3s ease-in-out;
+}
+.btn-primary:hover{
+    background:#000;
+}
+.form-control:focus::-webkit-input-placeholder {
+    color: #fff;
+}
+.join-close {
+    width: 100%;
+    height: 50px;
+}
+.join-close ul{
+    float: right;
+    width: 200px;
+}
+.join-close ul li{
+    float: left;
+    padding: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    color: #aaa;
+}
+.join-close ul li:hover{
+    color: #000;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 5;
 }
 .logo{
 	float: left;
@@ -146,7 +216,7 @@ nav{
 	padding: 5px 0;
 	width: 25%;
 	height: 30px;
-	transition: all 0.4s;
+	transition: all 0.3s;
 	text-align: center;
 }
 .main-menu:hover{
@@ -166,7 +236,7 @@ nav{
 	width: 100%;
 	height: 30px;
 	color: #000;
-	transition: all 0.4s;
+	transition: all 0.3s;
 }
 .sub-menu li:hover{
 	background-color: rgba(0,0,0,0.6);
@@ -270,7 +340,7 @@ article{
     height: 600px;
 }
 .slide-new ul li:hover .wrap, .men ul li:hover .wrap {
-    border: 2px solid #ccc;
+    border: 2px solid rgba(0,0,0,0.15);
 }
 .slide-new .wrap, .men .wrap{
 	position: relative;
@@ -285,7 +355,7 @@ article{
 .slide-new .wrap span{
 	display: block;
 	padding: 3px 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
 	font-size: 15px;
 }
 .slide-new .wrap dl dt{
@@ -324,12 +394,12 @@ article{
 	float: left;
 	width: 25%;
 }
-.men .wrap dl dt{
-	padding: 10px 0;
-	font-weight: bold;
-	color: #000;
-	border-bottom: 1px solid #ccc;
- }
+.men .wrap dl dt {
+    padding: 10px 0;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
 .men .wrap dl dd:last-child{
 	padding: 30px 30px 10px 0;
 	text-align: right;
@@ -375,7 +445,7 @@ article{
 	width: 25%;
 }
 .kids ul li:hover .wrap{
-	border: 2px solid #0a85d5;
+	border: 2px solid rgba(0,0,0,0.15);
 	transition: all 0.3s;
 }
 .kids .wrap{
@@ -392,7 +462,7 @@ article{
 	padding: 10px 0;
 	font-weight: bold;
 	color: #000;
-	border-bottom: 1px solid #0a85d5;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
  }
 .kids .wrap dl dd:last-child{
 	padding: 30px 30px 10px 0;
@@ -453,4 +523,86 @@ footer{
 	background-color: #666;
 	color: #fff;
 	transition: all 0.3s;
+}
+
+.joinus-wrap{
+    padding: 50px;
+    width: 960px;
+    color: #111;
+    font-size: 20px;
+}
+.joinus-logo {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.joinus-logo img{
+    width: 300px;
+    height: 150px;
+}
+fieldset {
+    padding: 0 20%;
+    border: 1px solid rgba(0,0,0,0.15);
+}
+fieldset legend {
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+fieldset ul {
+    margin-top: 30px;
+}
+fieldset ul li{
+    padding: 12px;
+    
+}
+fieldset ul li:last-child{
+    margin-bottom: 30px;
+}
+fieldset ul li strong{
+    font-size: 12px;
+    color: #ff0000;
+}
+fieldset ul li input{
+    margin-left: 20px;
+    padding: 10px;
+    height: 25px;
+}
+.btn-add{
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background: #aaa;
+    color: #fff;
+}
+.btn-add:hover{
+    background: #ccc;
+    transition: all 0.5s;
+}
+.send {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    border: 0;
+}
+.send input{
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: #666;
+    color: #ccc;
+}
+.send input:hover{
+    background: #111;
+    transition: all 0.5s;
+}
+.send input:last-child{
+    margin-left: 20px;
 }

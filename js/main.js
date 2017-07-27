@@ -1,17 +1,24 @@
-//new WOW().init();
 
 $(function () {
     $(".notice-btn").click(function () {
         $("#screen, #notice").fadeOut();
     });
 
+    $("#click-login").click(function () {
+        console.log("gogogogo");
+        $("#screen, #login-popup").fadeIn();
+    });
+    $(".btn-primary, .login-close").click(function () {
+        $("#screen, #login-popup").fadeOut();
+    });
+
     $(".main-menu").mouseover(function () {
         console.log("mouse over");
-		$(this).children(".sub-menu").show();
+        $(this).children(".sub-menu").slideDown();
 	});
     $(".main-menu").mouseleave(function () {
         console.log("mouse out");
-		$(this).children(".sub-menu").hide();
+        $(this).children(".sub-menu").slideUp();
 	});
 
 	$(".click-modal").click(function(){

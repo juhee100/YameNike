@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="http://image.nike.co.kr//nike_favicon.ico">
-	<title>Portfolio</title>
+	<title>Yame Nike</title>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
@@ -15,15 +15,44 @@
  </head>
 
  <body>
-	<div id="screen" class="wow fadeInUp"></div>
-	<div id="notice" class="wow fadeInUp">
+    <div id="screen"></div>
+    <div id="notice">
         <div class="notice-wrap">
             <img src="images/sale.jpg" alt="slae-notice">
             <button class="notice-btn">CLOSE</button>
         </div>
-	</div>
+    </div>
+    
+    <div id="login-popup">
+        <div class="login-wrap">
+            <div class="login-logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="login-form">
+                <div class="form">
+                    <form class="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="ID" class="form-control" placeholder="ID">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="PassWord">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Log-In</button>
+                        </div>
+                        <div class="join-close">
+                            <ul>
+                                <li><a href="joinus.html" title="Move To JoinUs Page" target="_blank">Join Us</a></li>
+                                <li><a class="login-close" href="javascript:void(0)">Close <i class="fa fa-window-close" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<header>
+    <header>
 		<div class="logo">
 			<a href="#">
 				<div class="logo-wrap"></div>
@@ -33,10 +62,10 @@
             <div class="sitemap">
                 <div class="sitemap01">1234</div>
                 <ul>
-                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> My Home</a></li>
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> My Home</a></li>
+                    <li><a href="javascript:void(0)" id="click-login" title="Move To LogIn Page">Log In</a></li>
+                    <li><a href="joinus.html" title="Move To JoinUs Page" target="_blank">Join Us</a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
                 </ul>
             </div>
 		    <nav>
