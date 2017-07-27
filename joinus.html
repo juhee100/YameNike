@@ -18,29 +18,48 @@
 	<div class="joinus-logo">
 		<img src="images/logo.png" alt="logo">
 	</div>
-	<form>
-		<fieldset>
-			<legend>Join Us</legend>
-			<ul>
-				<li>ID <strong>*</strong><input type="text" id="new-id" placeholder="아이디" size="20"></li>
-				<li>PASSWORD <strong>*</strong><input type="password" id="new-pw" placeholder="비밀번호" size="20"></li>
-				<li>PASSWORD CONFIRM <strong>*</strong><input type="password" id="con-pw" placeholder="비밀번호 확인" size="20"></li>
-				<li>NAME <strong>*</strong><input type="text" id="user-name" placeholder="이름" size="20"></li>
-				<li>E-MAIL <strong>*</strong><input type="email" id="user-mail" placeholder="이메일 주소"></li>
-				<li>TELEPHONE <strong>*</strong><input type="tel" id="user-tel" placeholder="연락처"></li>
-				<li>ADDRESS 
-                    <strong>*</strong><br/>
-					<input type="text" id="user-add" size="10" placeholder="우편번호">
-					<button class="btn-add">검색</button><br/>
-					<input type="text" id="user-add" placeholder="도로명 주소" size="50"><br/>
-					<input type="text" id="user-add" placeholder="상세 주소" size="50">
-				</li>
-			</ul>
-		</fieldset>
-		<fieldset class="send">
-			<input type="submit" value="Join Us">
-			<input type="reset" value="Close">
-		</fieldset>
-	</form>
+    <form method="post" class="joinus-form">
+        <h1>
+            Personal Information
+            <span>Please Join Us</span>
+        </h1>
+        <label>
+            <span>ID</span>
+            <input type="text" placeholder="아이디" />
+        </label>
+
+        <label>
+            <span>PASSWORD</span>
+            <input type="password" placeholder="패스워드" />
+        </label>
+
+        <label>
+            <span>TELEPHONE</span>
+            <input type="text" placeholder="연락처" />
+        </label>
+
+        <label>
+            <span>E-MAIL</span>
+            <input type="email" placeholder="이메일" />
+        </label>
+
+        <label>
+            <span>ADDRESS</span>
+            <input type="text" placeholder="주소">
+            <input type="text" placeholder="상세주소">
+        </label>
+        <label>
+            <span>GENDER</span>
+            <select>
+                <option>남성</option>
+                <option>여성</option>
+            </select>
+        </label>
+        <label>
+            <span>&nbsp;</span>
+            <br/>
+            <input type="button" class="button" value="Send" />
+        </label>
+    </form>
  </body>
 </html>

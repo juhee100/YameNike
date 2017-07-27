@@ -25,6 +25,7 @@ body{
 	margin: 0 auto;
 	background-color: #fff;
 	font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
 	color: #666;
 }
 .mt10{
@@ -540,69 +541,68 @@ footer{
     width: 300px;
     height: 150px;
 }
-fieldset {
-    padding: 0 20%;
-    border: 1px solid rgba(0,0,0,0.15);
-}
-fieldset legend {
-    padding: 10px;
-    width: 100%;
-    height: 60px;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-fieldset ul {
-    margin-top: 30px;
-}
-fieldset ul li{
-    padding: 12px;
-    
-}
-fieldset ul li:last-child{
-    margin-bottom: 30px;
-}
-fieldset ul li strong{
-    font-size: 12px;
-    color: #ff0000;
-}
-fieldset ul li input{
-    margin-left: 20px;
-    padding: 10px;
-    height: 25px;
-}
-.btn-add{
-    width: 50px;
-    height: 25px;
-    font-size: 12px;
+/*form style*/
+.joinus-form {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 650px;
+    background: #F8F8F8;
+    padding: 30px 30px 20px 30px;
     border-radius: 5px;
-    border: 1px solid #666;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.joinus-form h1 {
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
     background: #aaa;
-    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #949494;
+
 }
-.btn-add:hover{
-    background: #ccc;
-    transition: all 0.5s;
+.joinus-form h1>span {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
 }
-.send {
-    margin-top: 30px;
-    text-align: center;
+
+.joinus-form label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.joinus-form label>span {
+    float: left;
+    margin-top: 10px;
+    color: #111;
+    font-size: 15px;
+}
+.joinus-form input[type="text"], .joinus-form input[type="email"], .joinus-form input[type="password"], .joinus-form textarea, .joinus-form select {
+    height: 30px;
+    line-height: 15px;
     width: 100%;
-    height: 100px;
-    border: 0;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
 }
-.send input{
-    padding: 10px;
-    width: 200px;
-    height: 50px;
+.joinus-form textarea{
+    height:100px;
+    padding-top: 10px;
+}
+.joinus-form .button {
+    background-color: #aaa;
     border-radius: 5px;
-    background: #666;
-    color: #ccc;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
 }
-.send input:hover{
-    background: #111;
+.joinus-form .button:hover {
+    background-color:#111;
     transition: all 0.5s;
-}
-.send input:last-child{
-    margin-left: 20px;
 }
