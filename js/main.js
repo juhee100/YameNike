@@ -1,4 +1,3 @@
-
 $(function () {
     $(".notice-btn").click(function () {
         $("#screen, #notice").fadeOut();
@@ -33,11 +32,21 @@ $(function () {
         $("#screen, #modal").fadeOut();
     });
 
-    $(".slide-new").jCarouselLite({
-        btnNext: ".next",
-        btnPrev: ".prev",
-        visible: 3,
-        mouseWheel: true,
-        speed: 500
+    $('.owl-carousel').owlCarousel({
+        autoplay: true,
+        loop: true,
+        margin: 30,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
     });
 });
