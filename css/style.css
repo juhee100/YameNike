@@ -341,7 +341,7 @@ article{
 .slide{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .slide, .slide-new {
     margin: 0 auto;
@@ -393,6 +393,9 @@ article{
 }
 .slide button.prev, .slide button.next{
 	position: absolute;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 .slide button.prev{
