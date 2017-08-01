@@ -341,7 +341,7 @@ article{
 .slide{
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .slide, .slide-new {
     margin: 0 auto;
