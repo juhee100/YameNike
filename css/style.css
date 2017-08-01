@@ -1,9 +1,11 @@
 ﻿@charset "utf-8";
 @import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
-*{
-	margin: 0; 
-	padding: 0; 
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 ul, li{
 	list-style: none;
@@ -56,6 +58,8 @@ mt20{
     left: 33.333%;
     width: 33.333%;
     background-color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     border-radius: 15px;
     z-index: 100;
 }
@@ -67,6 +71,8 @@ mt20{
 #notice img {
     display: inline-block;
     width: 70%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     border-radius: 15px;
 }
 .notice-btn {
@@ -76,6 +82,8 @@ mt20{
     background-color: #666;
     color: #fff;
     font-weight: bold;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
 }
 .notice-btn:hover {
@@ -118,14 +126,16 @@ mt20{
     background: #000;
     color: #fff;
 }
-.btn-primary{
+.btn-primary {
     margin: 50px 0;
-    width:150px;
-    height:40px;
+    width: 150px;
+    height: 40px;
     background: #aaa;
     color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
-    transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover{
     background:#000;
@@ -167,7 +177,8 @@ header {
 }
 .logo-wrap{
 	margin-left: 150px;
-	width: 100%; height: 100px;
+	width: 100%; 
+    height: 100px;
 	background: url(../images/logo.png) no-repeat;
 }
 .header-wrap{
@@ -227,7 +238,7 @@ nav{
 .sub-menu{
 	display: none;
 	position: absolute;
-	margin-top: 5px;
+	margin-top: 10px;
 	width: 100%;
 	background-color: rgba(255,255,255,0.6);
 	z-index: 5;
@@ -320,25 +331,33 @@ article{
 	color: #fff;
 	font-size: 20px;
 	font-weight: bold;
-	transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 	z-index: 5;
 }
 /* slide*/
 .slide{
     position: relative;
-    width: 1320px;
+    width: 100%;
+    height: auto;
 }
 .slide, .slide-new {
     margin: 0 auto;
 }
+.slide-new {
+    width: 80%;
+    height: 100%;
+}
 .slide-new ul{
     overflow: hidden;
-    width: 1200px;
+    width: 100%;
 }
 .slide-new ul li {
     float: left;
-    width: 400px;
-    height: 600px;
+    width: 33.333%;
+    height: 100%;
 }
 .slide-new ul li:hover .wrap, .men ul li:hover .wrap {
     border: 2px solid rgba(0,0,0,0.15);
@@ -489,6 +508,8 @@ footer{
     padding: 20px;
     background-color: #fff;
     z-index: 100;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     border-radius: 15px;
     transition: all 0.5s;
 }
@@ -516,7 +537,9 @@ footer{
     margin-top: 20px;
     width: 200px;
     padding: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     background-color: #000;
     color: #ccc;
 }
@@ -558,9 +581,10 @@ footer{
     margin: -30px -30px 10px -30px;
     color: #FFF;
     background: #aaa;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
     border-radius: 5px 5px 0px 0px;
-    border-bottom:1px solid #949494;
-
+    border-bottom: 1px solid #949494;
 }
 .joinus-form h1>span {
     display: block;
@@ -596,6 +620,8 @@ footer{
 }
 .joinus-form .button {
     background-color: #aaa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     border: none;
     padding: 10px 25px 10px 25px;
