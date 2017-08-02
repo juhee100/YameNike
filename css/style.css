@@ -487,7 +487,6 @@ footer{
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    transition: all 0.3s;
 }
 .popup-contents {
     width: 100%;

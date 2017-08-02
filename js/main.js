@@ -25,11 +25,11 @@ $(function () {
         var name = $(this).find("img").attr("alt");
         $("#title").text(name);
 		$("#modal-photo").attr("src", image);
-		$("#screen, #modal").show();
+        $("#screen, #modal").fadeIn();
 	});
 
 	$("#close").click(function(){
-        $("#screen, #modal").hide();
+        $("#screen, #modal").fadeOut();
     });
 
     $('.owl-carousel').owlCarousel({
