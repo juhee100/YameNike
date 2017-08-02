@@ -25,18 +25,18 @@ $(function () {
         var name = $(this).find("img").attr("alt");
         $("#title").text(name);
 		$("#modal-photo").attr("src", image);
-		$("#screen, #modal").fadeIn();
+		$("#screen, #modal").show();
 	});
 
 	$("#close").click(function(){
-        $("#screen, #modal").fadeOut();
+        $("#screen, #modal").hide();
     });
 
     $('.owl-carousel').owlCarousel({
         autoplay: true,
         loop: true,
         margin: 10,
-        speed: 4000,
+        speed: 5000,
         nav: true,
         mouseWheel: true,
         responsive: {
