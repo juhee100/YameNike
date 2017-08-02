@@ -27,11 +27,12 @@ $(function () {
         $("#screen, #modal").fadeOut();
     });
 
-    $('.owl-carousel').owlCarousel({
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
         autoplay: true,
+        autoplayTimeout: 2000,
         loop: true,
         margin: 10,
-        speed: 5000,
         nav: true,
         mouseWheel: true,
         responsive: {
@@ -45,5 +46,14 @@ $(function () {
                 items: 4
             }
         }
+    });
+
+    owl.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY > 0) {
+            owl.trigger('next.owl');
+        } else {
+            owl.trigger('prev.owl');
+        }
+        e.preventDefault();
     });
 });
