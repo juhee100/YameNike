@@ -35,8 +35,10 @@ $(function () {
     $('.owl-carousel').owlCarousel({
         autoplay: true,
         loop: true,
-        margin: 30,
+        margin: 10,
+        speed: 3000,
         nav: true,
+        mouseWheel: true,
         responsive: {
             0: {
                 items: 1
