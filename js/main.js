@@ -11,15 +11,6 @@ $(function () {
         $("#screen, #login-popup").fadeOut();
     });
 
-    $(".main-menu").mouseover(function () {
-        console.log("mouse over");
-        $(this).children(".sub-menu").slideDown();
-	});
-    $(".main-menu").mouseleave(function () {
-        console.log("mouse out");
-        $(this).children(".sub-menu").slideUp();
-	});
-
 	$(".click-modal").click(function(){
         var src = $(this).data("image");
         var name = $(this).find("img").attr("alt");
