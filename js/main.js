@@ -21,11 +21,15 @@ $(function () {
 	});
 
 	$(".click-modal").click(function(){
-        var image = $(this).data("image");
+        var src = $(this).data("image");
         var name = $(this).find("img").attr("alt");
-        $("#title").text(name);
-		$("#modal-photo").attr("src", image);
-        $("#screen, #modal").fadeIn();
+        var image = new Image();
+        image.src = src;
+        image.onload = function () {
+            $("#title").text(name);
+            $("#modal-photo").attr("src", src);
+            $("#screen, #modal").fadeIn();
+        };
 	});
 
 	$("#close").click(function(){
