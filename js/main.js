@@ -36,7 +36,7 @@ $(function () {
         autoplay: true,
         loop: true,
         margin: 10,
-        speed: 3000,
+        speed: 4000,
         nav: true,
         mouseWheel: true,
         responsive: {
